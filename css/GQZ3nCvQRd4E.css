@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../fonts/xk1HdnHwKMH1.woff2) format("woff2"), url(../fonts/hearJqInPN2S.ttf) format("truetype")
+}
+
+a use[href="#icon-chevron-right"] {
+  transition: transform 0.2s ease-out
+}
+
+a:hover use[href="#icon-chevron-right"],
+a:focus use[href="#icon-chevron-right"] {
+  transform: translateX(0.6rem)
+}
+
+#skip-to-content {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#skip-to-content:not(:focus) {
+    width: 0.1rem;
+    height: 0.1rem;
+    padding: 0 !important;
+    top: -0.1rem;
+}
+
+.documentation p + p,
+.documentation p + ul,
+.documentation ul + p,
+.documentation li + li {
+    margin-top: 1.5rem
+}
+
+.documentation ul li::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 3px;
+    width: 3px;
+    background: rgb(0, 51, 160);
+    left: 3px;
+    top: calc(13px);
+}
+
+.documentation ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.documentation a {
+    position: relative;
+    color: rgb(0, 51, 160);
+    text-decoration: none;
+    padding: 0px 0px 1px;
+    transition: opacity 0.25s ease-out;
+}
+
+.documentation a:hover {
+    text-decoration: underline;
+}
+
+
+#ot-sdk-btn-floating.ot-floating-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ot-privacy-notice-language-dropdown-container {
+    justify-content: flex-start !important;
+}
+
+.otnotice-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .otnotice-content {
+        flex-direction: row;
+    }
+}
+
+.otnotice-menu {
+    position: sticky !important;
+    top: 12.9rem !important;
+    height: calc(100vh - 12.9rem) !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
+
+.otnotice-sections {
+    margin: 0 !important;
+    word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+    .otnotice-sections {
+        width: calc(100% - 40rem);
+    }
+}
